@@ -11,7 +11,10 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-
+//@Tag(
+//        name = "CRUD REST APIs for Accounts in Buckaroo",
+//        description = "CRUD REST APIs in Buckaroo to CREATE, UPDATE, FETCH AND DELETE account details"
+//)
 @RestController
 @RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
 @AllArgsConstructor
