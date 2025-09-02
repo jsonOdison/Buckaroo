@@ -3,5 +3,8 @@ package com.bankACB.accounts.repository;
 import com.bankACB.accounts.entity.Accounts;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AccountsRepository extends JpaRepository<Accounts,Long> {
+import java.util.Optional;
+
+public interface AccountsRepository extends JpaRepository<Accounts, Long> {
+    Optional<Accounts> findByCustomerId(Long customerId);
 }

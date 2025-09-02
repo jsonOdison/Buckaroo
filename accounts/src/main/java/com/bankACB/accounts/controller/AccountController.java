@@ -4,6 +4,7 @@ import com.bankACB.accounts.constants.AccountsConstants;
 import com.bankACB.accounts.dto.CustomerDTO;
 import com.bankACB.accounts.dto.ResponseDTO;
 import com.bankACB.accounts.services.IAccountService;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -27,6 +28,20 @@ public class AccountController {
     @GetMapping("/fetch")
     public ResponseEntity<CustomerDTO> fetchAccount(@RequestParam String mobileNumber) {
         CustomerDTO customerDTO = iAccountService.fetchAccount(mobileNumber);
-        return ResponseEntity.status(HttpStatus.CREATED).body(customerDTO);
+        return ResponseEntity.status(HttpStatus.OK).body(customerDTO);
+    }
+
+    @PutMapping("/update")
+    public ResponseEntity<ResponseDTO> updateAccountDetails(@Valid @RequestBody CustomerDTO customerDTO) {
+        boolean isUpdated = iAccountService.updateAccount(customerDTO);
+        if (isUpdated) {
+            return ResponseEntity
+                    .status(HttpStatus.OK)
+                    .body(new ResponseDTO(AccountsConstants.STATUS_200, AccountsConstants.MESSAGE_200));
+        } else {
+            return ResponseEntity
+                    .status(HttpStatus.EXPECTATION_FAILED)
+                    .body(new ResponseDTO(AccountsConstants.STATUS_417, AccountsConstants.MESSAGE_417_UPDATE));
+        }
     }
 }
