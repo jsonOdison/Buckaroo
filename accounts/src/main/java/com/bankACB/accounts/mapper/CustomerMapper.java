@@ -13,7 +13,10 @@ public class CustomerMapper {
         return customerDto;
     }
 
-    public static Customer mapToCustomer(CustomerDTO customerDto, Customer customer) {
+    public static Customer mapToCustomer(CustomerDTO customerDto, Customer customer, boolean isNew) {
+        if (isNew) {
+            customer.setMobileNumber(customerDto.getMobileNumber());
+        }
         customer.setName(customerDto.getName());
         customer.setEmail(customerDto.getEmail());
         customer.setMobileNumber(customerDto.getMobileNumber());
