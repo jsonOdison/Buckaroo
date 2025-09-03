@@ -2,7 +2,7 @@ package com.bankACB.accounts.services.AccountsSericeImpl;
 
 import com.bankACB.accounts.constants.AccountsConstants;
 import com.bankACB.accounts.dto.AccountsDto;
-import com.bankACB.accounts.dto.CustomerDTO;
+import com.bankACB.accounts.dto.CustomerDto;
 import com.bankACB.accounts.entity.Accounts;
 import com.bankACB.accounts.entity.Customer;
 import com.bankACB.accounts.exception.CustomerAlreadyExistException;
@@ -15,7 +15,6 @@ import com.bankACB.accounts.services.IAccountService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.Random;
 
@@ -28,14 +27,13 @@ public class AcountServiceImpl implements IAccountService {
 
 
     @Override
-    public void createAccount(CustomerDTO customerDTO) {
+    public void createAccount(CustomerDto customerDTO) {
         Customer customer = CustomerMapper.mapToCustomer(customerDTO, new Customer(), true);
         Optional optionalCustomer = customerRepository.findByMobileNumber(customerDTO.getMobileNumber());
         if (optionalCustomer.isPresent()) {
             throw new CustomerAlreadyExistException("Customer already registered with given mobile number" + customerDTO.getMobileNumber());
         }
-        customer.setCreatedAt(LocalDateTime.now());
-        customer.setCreatedBy("Jason Test");
+
         Customer savedCustomer = customerRepository.save(customer);
         accountsRepository.save(createNewAccount(savedCustomer));
     }
@@ -47,22 +45,21 @@ public class AcountServiceImpl implements IAccountService {
         newAccount.setAccountNumber(randomAccNumber);
         newAccount.setAccountType(AccountsConstants.SAVINGS);
         newAccount.setBranchAddress(AccountsConstants.ADDRESS);
-        newAccount.setCreatedAt(LocalDateTime.now());
-        newAccount.setCreatedBy("Jason Test");
+
         return newAccount;
     }
 
     @Override
-    public CustomerDTO fetchAccount(String mobileNumber) {
+    public CustomerDto fetchAccount(String mobileNumber) {
         Customer customer = customerRepository.findByMobileNumber(mobileNumber).orElseThrow(() -> new ResourceNotFoundException("Customer", "mobile Number", mobileNumber));
         Accounts accounts = accountsRepository.findByCustomerId(customer.getCustomerId()).orElseThrow(() -> new ResourceNotFoundException("Account", "customer Id not found", customer.getCustomerId().toString()));
-        CustomerDTO customerDTO = CustomerMapper.mapToCustomerDTO(customer, new CustomerDTO());
+        CustomerDto customerDTO = CustomerMapper.mapToCustomerDTO(customer, new CustomerDto());
         customerDTO.setAccountsDto(AccountsMapper.mapToAccountsDto(accounts, new AccountsDto()));
         return customerDTO;
     }
 
     @Override
-    public boolean updateAccount(CustomerDTO customerDTO) {
+    public boolean updateAccount(CustomerDto customerDTO) {
         boolean isUpdated = false;
         AccountsDto accountsDTO = customerDTO.getAccountsDto();
         if (accountsDTO != null) {

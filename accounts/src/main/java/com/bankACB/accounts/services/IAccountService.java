@@ -1,13 +1,13 @@
 package com.bankACB.accounts.services;
 
-import com.bankACB.accounts.dto.CustomerDTO;
+import com.bankACB.accounts.dto.CustomerDto;
 
 public interface IAccountService {
-    void createAccount(CustomerDTO customerDTO);
+    void createAccount(CustomerDto customerDTO);
 
-    CustomerDTO fetchAccount(String mobileNumber);
+    CustomerDto fetchAccount(String mobileNumber);
 
-    boolean updateAccount(CustomerDTO customerDTO);
+    boolean updateAccount(CustomerDto customerDTO);
 
     boolean deleteAccount(String mobileNumber);
 }
