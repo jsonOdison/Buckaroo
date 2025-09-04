@@ -1,0 +1,213 @@
+{
+  "info": {
+    "_postman_id": "baedc67c-3719-413e-b79d-658733f6235f",
+    "name": "Microservices",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "1599575"
+  },
+  "item": [
+    {
+      "name": "accounts",
+      "item": [
+        {
+          "name": "CreateAccount",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Jason Khongwir\",\n    \"email\": \"jasonkTester12392@gmail.com\",\n    \"mobileNumber\": \"4354437687\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/create",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "FetchAccountDetails",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/fetch?mobileNumber=4354437687",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "fetch"
+              ],
+              "query": [
+                {
+                  "key": "mobileNumber",
+                  "value": "4354437687"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateAccountDetails",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Madan Mohan\",\n    \"email\": \"jasonkTester12392@gmail.com\",\n    \"mobileNumber\": \"4354437687\",\n    \"accountsDto\": {\n        \"accountNumber\": 1105557729,\n        \"accountType\": \"Savings\",\n        \"branchAddress\": \"123 Main Street, New York\"\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/update",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "update"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "cards",
+      "item": [
+        {
+          "name": "CreateCard",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/create?mobileNumber=4354437687",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9000",
+              "path": [
+                "api",
+                "create"
+              ],
+              "query": [
+                {
+                  "key": "mobileNumber",
+                  "value": "4354437687"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "FetchCardDetails",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/fetch?mobileNumber=4354437687",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9000",
+              "path": [
+                "api",
+                "fetch"
+              ],
+              "query": [
+                {
+                  "key": "mobileNumber",
+                  "value": "4354437687"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "loans",
+      "item": [
+        {
+          "name": "CreateLoan",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/create?mobileNumber=4354437687",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "create"
+              ],
+              "query": [
+                {
+                  "key": "mobileNumber",
+                  "value": "4354437687"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "FetchLoanDetails",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/fetch?mobileNumber=4354437687",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "fetch"
+              ],
+              "query": [
+                {
+                  "key": "mobileNumber",
+                  "value": "4354437687"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
