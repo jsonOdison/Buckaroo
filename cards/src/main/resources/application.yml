@@ -16,3 +16,12 @@ spring:
     show-sql: true
 build:
   version: "1.0"
+
+cards:
+  message: "Welcome to Buckaroo cards related local APIs "
+  contactDetails:
+    name: "Jason khongwir"
+    email: "-.com"
+  onCallSupport:
+    - (412) 419-3491
+    - (915) 382-1932
