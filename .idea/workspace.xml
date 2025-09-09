@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9182c3c9-b54e-4a47-adef-912fca07a44d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application_qa.yml" beforeDir="false" />
+    <list default="true" id="9182c3c9-b54e-4a47-adef-912fca07a44d" name="Changes" comment="added configurations to externalise cards and loans&#10;updated in each service respective cards,loans,accounts">
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,11 +180,20 @@
       <option name="project" value="LOCAL" />
       <updated>1757281952665</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added configurations to externalise cards and loans&#10;updated in each service respective cards,loans,accounts">
+      <option name="closed" value="true" />
+      <created>1757445871759</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1757445871759</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added fixes to POM.xml files to cards , loans , and other things" />
-    <option name="LAST_COMMIT_MESSAGE" value="added fixes to POM.xml files to cards , loans , and other things" />
+    <MESSAGE value="added configurations to externalise cards and loans&#10;updated in each service respective cards,loans,accounts" />
+    <option name="LAST_COMMIT_MESSAGE" value="added configurations to externalise cards and loans&#10;updated in each service respective cards,loans,accounts" />
   </component>
 </project>
