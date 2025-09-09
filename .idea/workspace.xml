@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9182c3c9-b54e-4a47-adef-912fca07a44d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/microservice.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configServerr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configServerr/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application_qa.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,31 +36,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConfigServerrApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.LoansApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.accounts.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.accoutns.executor&quot;: &quot;Run&quot;,
-    &quot;Application.configuration.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#8 on configurations__setup&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/code/microservice&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AccountsApplication.executor": "Run",
+    "Application.ConfigServerrApplication.executor": "Debug",
+    "Application.LoansApplication.executor": "Debug",
+    "Application.accounts.executor": "Debug",
+    "Application.accoutns.executor": "Run",
+    "Application.cards.executor": "Debug",
+    "Application.configServer.executor": "Run",
+    "Application.configuration.executor": "Run",
+    "Application.loans.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "#8 on configurations__setup",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/code/microservice"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\code\microservice\loans\src\main\java\com\bankACB\loans" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.cards">
+  <component name="RunManager" selected="Application.configServer">
     <configuration name="accounts" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.bankACB.accounts.AccountsApplication" />
       <module name="accounts" />
@@ -172,8 +159,8 @@
     <list>
       <item itemvalue="Application.accounts" />
       <item itemvalue="Application.cards" />
-      <item itemvalue="Application.loans" />
       <item itemvalue="Application.configServer" />
+      <item itemvalue="Application.loans" />
     </list>
   </component>
   <component name="TaskManager">
@@ -184,6 +171,19 @@
       <option name="presentableId" value="Default" />
       <updated>1757275200660</updated>
     </task>
+    <task id="LOCAL-00001" summary="added fixes to POM.xml files to cards , loans , and other things">
+      <option name="closed" value="true" />
+      <created>1757281952665</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1757281952665</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added fixes to POM.xml files to cards , loans , and other things" />
+    <option name="LAST_COMMIT_MESSAGE" value="added fixes to POM.xml files to cards , loans , and other things" />
   </component>
 </project>
