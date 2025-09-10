@@ -4,9 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9182c3c9-b54e-4a47-adef-912fca07a44d" name="Changes" comment="added configurations to externalise cards and loans&#10;updated in each service respective cards,loans,accounts">
+    <list default="true" id="9182c3c9-b54e-4a47-adef-912fca07a44d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankACB/accounts/dto/AccountContactInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/bankACB/loans/dto/LoansContactInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/bankACB/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankACB/accounts/AccountsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/bankACB/accounts/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankACB/accounts/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/bankACB/accounts/dto/AccountsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankACB/accounts/dto/AccountsDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/bankACB/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/bankACB/cards/controller/CardsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/bankACB/cards/dto/CardContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/bankACB/cards/dto/CardContactInfoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServerr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configServerr/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServerr/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configServerr/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServerr/src/main/resources/config/accounts-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServerr/src/main/resources/config/accounts-qa.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServerr/src/main/resources/config/accounts.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServerr/src/main/resources/config/cards-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServerr/src/main/resources/config/cards-qa.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServerr/src/main/resources/config/cards.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServerr/src/main/resources/config/loans-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServerr/src/main/resources/config/loans-qa.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServerr/src/main/resources/config/loans.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/bankACB/loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/bankACB/loans/LoansApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/bankACB/loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/bankACB/loans/controller/LoansController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +53,9 @@
     &quot;accountId&quot;: &quot;0f9b714d-1ef9-4995-84d8-481efc90e00a&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/accounts/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -45,7 +72,7 @@
     "Application.accounts.executor": "Debug",
     "Application.accoutns.executor": "Run",
     "Application.cards.executor": "Debug",
-    "Application.configServer.executor": "Run",
+    "Application.configServer.executor": "Debug",
     "Application.configuration.executor": "Run",
     "Application.loans.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -63,8 +90,12 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\code\microservice\loans\src\main\java\com\bankACB\loans" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bankACB.loans.dto" />
+      <recent name="com.bankACB.accounts.dto" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.configServer">
+  <component name="RunManager" selected="Application.cards">
     <configuration name="accounts" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.bankACB.accounts.AccountsApplication" />
       <module name="accounts" />
@@ -188,12 +219,21 @@
       <option name="project" value="LOCAL" />
       <updated>1757445871759</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added updation to profiles">
+      <option name="closed" value="true" />
+      <created>1757446264742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757446264742</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added fixes to POM.xml files to cards , loans , and other things" />
     <MESSAGE value="added configurations to externalise cards and loans&#10;updated in each service respective cards,loans,accounts" />
-    <option name="LAST_COMMIT_MESSAGE" value="added configurations to externalise cards and loans&#10;updated in each service respective cards,loans,accounts" />
+    <MESSAGE value="added updation to profiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added updation to profiles" />
   </component>
 </project>
