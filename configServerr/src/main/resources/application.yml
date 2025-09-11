@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: "configserver"
+
+  profiles:
+    active: git
+
+  cloud:
+    config:
+      bus:
+        enabled: true
+        refresh:
+          enabled: true
+      server:
+        git:
+          uri: "https://github.com/jsonOdison/buckaroo_config_server.git"
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: guest
+    password: guest
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+
+encrypt:
+  key: "o4'(/%nBV(>YPi,sW[`,V?h=^8;rm@"
+
+server:
+  port: 8071
