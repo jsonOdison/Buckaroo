@@ -1,8 +1,10 @@
 spring:
   application:
     name: "configserver"
+
   profiles:
     active: git
+
   cloud:
     config:
       bus:
@@ -17,13 +19,21 @@ spring:
           clone-on-start: true
           force-pull: true
 
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: guest
+    password: guest
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 encrypt:
   key: "o4'(/%nBV(>YPi,sW[`,V?h=^8;rm@"
-rabbitmq:
-  host: localhost
-  port: 5672
-  username: guest
-  password: guest
 
 server:
   port: 8071
