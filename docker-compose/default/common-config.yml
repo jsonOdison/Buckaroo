@@ -1,0 +1,4 @@
+services:
+  network-deploy-services:
+    networks:
+      - buckaroo

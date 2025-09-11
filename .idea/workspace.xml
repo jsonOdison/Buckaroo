@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9182c3c9-b54e-4a47-adef-912fca07a44d" name="Changes" comment="added code fixes to accounts , cards , loans , config server , to create a bus using rabbit mq for config updation">
-      <change beforePath="$PROJECT_DIR$/configServerr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configServerr/pom.xml" afterDir="false" />
+    <list default="true" id="9182c3c9-b54e-4a47-adef-912fca07a44d" name="Changes" comment="added webhooks for git , auto configurations">
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configServerr/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configServerr/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +72,7 @@
       <recent name="com.bankACB.accounts.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.accounts">
+  <component name="RunManager" selected="Application.configServer">
     <configuration name="accounts" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.bankACB.accounts.AccountsApplication" />
       <module name="accounts" />
@@ -210,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757527386559</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added webhooks for git , auto configurations">
+      <option name="closed" value="true" />
+      <created>1757589124211</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1757589124211</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -218,6 +228,7 @@
     <MESSAGE value="added configurations to externalise cards and loans&#10;updated in each service respective cards,loans,accounts" />
     <MESSAGE value="added updation to profiles" />
     <MESSAGE value="added code fixes to accounts , cards , loans , config server , to create a bus using rabbit mq for config updation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added code fixes to accounts , cards , loans , config server , to create a bus using rabbit mq for config updation" />
+    <MESSAGE value="added webhooks for git , auto configurations" />
+    <option name="LAST_COMMIT_MESSAGE" value="added webhooks for git , auto configurations" />
   </component>
 </project>
